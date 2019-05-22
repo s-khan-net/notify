@@ -32,6 +32,7 @@ var app = {
 
       var btnCreate = document.getElementById('btnCreate');
       btnCreate.addEventListener('click',function(){
+        alert('Creating...');
         cordova.plugins.notification.local.schedule({
           id:2,
           title:'notification',
