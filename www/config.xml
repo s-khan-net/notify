@@ -26,7 +26,7 @@
   <preference name="android-minSdkVersion" value="21"/>
   <preference name="android-installLocation" value="auto"/>
   <preference name="AndroidLaunchMode" value="singleInstance" />
-  <plugin name="cordova-plugin-local-notifications-mm" />
+  <plugin name="cordova-plugin-local-notification-fixed" />
   <icon src="icon.png"/>
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
