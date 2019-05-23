@@ -39,7 +39,7 @@ var app = {
           icon: 'file://img/icon.png',
           sound: null,
           vibrate:true,
-          trigger: { at: new Date(now + 1000) }
+          trigger: { at: new Date(now + 15000) }
         });
       })
     }
