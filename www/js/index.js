@@ -6,7 +6,6 @@ var app = {
    
     onDeviceReady: function() {
       var now = new Date().getTime();
-      var d1 = new Date(now + 150000); //2.5 minutes 
       var n1 = {
         id:1,
         title:'wake up',
@@ -15,7 +14,7 @@ var app = {
         icon: 'file://img/icon.png',
         sound: null,
         vibrate:true,
-        at: d1
+        trigger: { at: new Date(now + 150000) } //2.5 minutes
       };
       cordova.plugins.notification.local.schedule(n1);
       
@@ -41,7 +40,7 @@ var app = {
           icon: 'file://img/icon.png',
           sound: null,
           vibrate:true,
-          at: new Date(now + 1000)
+          trigger: { at: new Date(now + 1000) }
         });
       })
     }
